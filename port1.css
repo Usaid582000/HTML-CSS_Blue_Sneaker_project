@@ -14,6 +14,14 @@ body {
     background-size: cover;
     background-position: center;
 }
+.logo {
+    font-size: 70px;
+    color: lavenderblush;
+    /* font-family: ; */
+    font-weight: 300;
+    width: 120px;
+    cursor: pointer;
+}
 
 header {
     background-color: transparent;
@@ -21,21 +29,6 @@ header {
     position: relative;
     overflow: hidden;
 }
-
-.liner {
-color: whitesmoke;
-    font-size: 55px;
-    overflow: hidden;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-}
-.liner2{
-color: whitesmoke;
-}
-.hbutton button{
-    display: inline-block;
-}
-
 header::before {
     content: '';
     position: absolute;
@@ -46,22 +39,49 @@ header::before {
     height: 130%;
     transform: rotate(40deg);
 }
-
-.shoe {
-    width: 100%;
-    height: 100vh;
+/*header END*/
+.liner {
+color: whitesmoke;
+    font-size: 55px;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+.liner2{
+color: whitesmoke;
+}
+.liner3{
+    font-size: 40px;
+    float:inline-end;
+    padding: 30px;
+    position: relative;
+}
+.liner3 button {
+    font-size: 35px;
     background-color: transparent;
-}
-
-.logo {
-    font-size: 70px;
-    color: lavenderblush;
-    /* font-family: ; */
-    font-weight: 300;
-    width: 120px;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid lavenderblush;
+    padding: 5px 10px;
     cursor: pointer;
+    transition: padding 0.3s ease-in-out;
 }
 
+.liner3 button:hover {
+    background-color: lavenderblush;
+    color: black;
+    padding: 10px 20px;
+}
+/*liners END*/
+
+
+.hlink {
+    text-decoration: none;
+    color:lavenderblush;
+    text-transform: uppercase;
+}
+
+/*  */
 .headpanel {
     padding-top: 40px;
     width: 90%;
@@ -69,13 +89,6 @@ header::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-/*  */
-.hlink {
-    text-decoration: none;
-    color: rgb(140, 155, 158);
-    text-transform: uppercase;
 }
 
 .headpanel ul li {
@@ -86,7 +99,7 @@ header::before {
 }
 
 .headpanel ul li ::after {
-
+    
     content: '';
     height: 3px;
     width: 0%;
@@ -94,7 +107,7 @@ header::before {
     position: absolute;
     left: 0;
     bottom: -10px;
-
+    
 }
 
 .headpanel ul li :hover::after {
@@ -102,7 +115,7 @@ header::before {
     transition-duration: 0.5s;
 }
 
-/**/
+/*headpanel END*/
 section {
     float: inline-end;
     position: 40px;
@@ -114,27 +127,14 @@ aside {
     position: relative;
     float: right;
 }
-
-.hbutton button {
-    font-size: 35px;
-    background-color: transparent;
-    color: white;
-    border-radius: 15px;
-    border: 2px solid lavenderblush;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: padding 0.3s ease-in-out;
-}
-
-.hbutton button:hover {
-    background-color: lavenderblush;
-    color: black;
-    padding: 10px 20px;
-}
-
 /**/
+.shoe {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
 .shoeimg img {
-
+    
     width: 32em;
     height: 22em;
     rotate: 0deg;
